@@ -1,7 +1,8 @@
+require "active_resource"
 require "QuoteRoller/version"
 require "QuoteRoller/base"
 require "QuoteRoller/quoteroller_resource"
-require "active_resource"
+require "QuoteRoller/resources/users"
 
 
 module QuoteRoller
