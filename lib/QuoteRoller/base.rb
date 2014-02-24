@@ -6,7 +6,43 @@ module QuoteRoller
     end
 
     def users
-      QuoteRoller::Resources::Users.find(:one, :from => "/v2/users")
+      QuoteRoller::Resources::Users.find().attributes["objects"]
+    end
+
+    def proposals
+      QuoteRoller::Resources::Proposals.find().attributes["objects"]
+      # Gets proposal ID
+      # props[0].id
+
+      # Gets proposal status number
+      # props[0].status
+
+      # Gets proposal status description
+      # props[0].status_description
+
+      # Gets the grand_total
+      # props[0].grand_total.to_i
+
+      # Gets the author of a given proposal
+      # props[0].author.email
+      # Gets the company id for a given proposal
+      # props[0].contacts[0].company.split('/').last
+
+    end
+
+    def proposal(id)
+      QuoteRoller::Resources::Proposals.find(id)
+      # Get a specific task name and qty
+      # qr.proposal("296169/pricingtable").attributes["services"][0].name
+      # qr.proposal("296169/pricingtable").attributes["services"][0].qty
+    end
+
+    def companies
+      QuoteRoller::Resources::Companies.find().attributes["objects"]
+    end
+
+    def company(id)
+      QuoteRoller::Resources::Companies.find(id)
     end
 
     private

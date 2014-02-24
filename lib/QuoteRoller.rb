@@ -3,9 +3,10 @@ require "QuoteRoller/version"
 require "QuoteRoller/base"
 require "QuoteRoller/quoteroller_resource"
 require "QuoteRoller/resources/users"
+require "QuoteRoller/resources/proposals"
+require "QuoteRoller/resources/companies"
 
 
 module QuoteRoller
   API_BASE_URL = "https://api.quoteroller.com/v2"
-  # Your code goes here...
 end
