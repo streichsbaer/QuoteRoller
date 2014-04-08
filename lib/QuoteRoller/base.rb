@@ -45,6 +45,15 @@ module QuoteRoller
       QuoteRoller::Resources::Companies.find(id)
     end
 
+    def contacts
+      QuoteRoller::Resources::Contacts.find().attributes["objects"]
+    end
+
+    def contact(id)
+      QuoteRoller::Resources::Contacts.find(id)
+    end
+
+
     private
       def config_base_resource
         QuoteRollerResource.site = QuoteRoller::API_BASE_URL

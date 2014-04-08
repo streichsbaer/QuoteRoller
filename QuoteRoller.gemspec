@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Stefan Streichsbier"]
   spec.email         = ["stefan@streichsbier.at"]
   spec.description   = "QuoteRoller API client"
-  spec.summary       = "QuoteRoller API client"
+  spec.summary       = "Rudimentary QuoteRoller API client"
   spec.homepage      = "http://vantage-point.asia"
   spec.license       = "MIT"
 
