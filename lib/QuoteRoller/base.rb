@@ -55,9 +55,7 @@ module QuoteRoller
 
     def services
       QuoteRollerResource.site = "https://api.quoteroller.com/v2/catalog"
-      QuoteRoller::Resources::Services.find()
-      # get services
-      # qr.catalog("/services")
+      QuoteRoller::Resources::Services.find().attributes["objects"]
     end
 
 
