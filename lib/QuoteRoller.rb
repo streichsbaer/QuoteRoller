@@ -6,6 +6,7 @@ require "QuoteRoller/resources/users"
 require "QuoteRoller/resources/proposals"
 require "QuoteRoller/resources/companies"
 require "QuoteRoller/resources/contacts"
+require "QuoteRoller/resources/catalog"
 
 module QuoteRoller
   API_BASE_URL = "https://api.quoteroller.com/v2"

@@ -53,6 +53,12 @@ module QuoteRoller
       QuoteRoller::Resources::Contacts.find(id)
     end
 
+    def catalog(type)
+      QuoteRoller::Resources::Catalog.find(id)
+      # get services
+      # qr.catalog("/services")
+    end
+
 
     private
       def config_base_resource
