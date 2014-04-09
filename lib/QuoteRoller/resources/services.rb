@@ -1,8 +1,8 @@
 module QuoteRoller
   module Resources
-    class Catalog < QuoteRoller::QuoteRollerResource
+    class Services < QuoteRoller::QuoteRollerResource
 
-      def self.catalog
+      def self.services
         find(:all)
       end
     end
