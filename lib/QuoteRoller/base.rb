@@ -54,7 +54,7 @@ module QuoteRoller
     end
 
     def catalog(type)
-      QuoteRoller::Resources::Catalog.find(id)
+      QuoteRoller::Resources::Catalog.find(type)
       # get services
       # qr.catalog("/services")
     end
